@@ -1,0 +1,207 @@
+/* 个人中心 */
+
+#user-contain {
+    margin-top: 100px;
+}
+
+#user-nav {
+    margin-left: 2%;
+    margin-top: 5%;
+}
+
+#navbar-example3 {
+    position: fixed;
+    width: 10%;
+    text-align: center;
+    border: 1px solid rgb(218, 215, 215);
+}
+
+#user-contain nav a {
+    background-color: #17a2b8;
+    border-radius: 0;
+    color: white;
+}
+
+#user-contain nav a:hover {
+    background-color: #3d7ab8;
+}
+
+#user-item-1 {
+    margin-bottom: -50px;
+}
+
+#user-item-2 {
+    margin-bottom: 50px;
+    padding-top: 80px;
+}
+
+/* 购物车 */
+
+#gouwuche-contain {
+    margin-top: 80px;
+    padding-bottom: 80px;
+}
+
+#gouwuche-nav {
+    background-color: #f3f3f3;
+    padding: 1%;
+    text-align: center;
+}
+
+#gouwuche-all {
+    font-size: 18px;
+    font-weight: bold;
+    color: #3776b4;
+}
+
+#gouwuche-num {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3776b4;
+    margin-left: 1%;
+}
+
+.gouwuche-store-contain {
+    margin-top: 2%;
+}
+
+#gouwuche-store-name {
+    font-weight: bold;
+    color: rgb(109, 106, 106);
+}
+
+#gouwuche-good-contain {
+    font-weight: lighter;
+    border: 1px solid rgb(216, 216, 216);
+    display: flex;
+    align-items: center;
+    padding: 1% 0;
+    color: grey;
+}
+
+#gouwuche-goood-detail span {
+    margin-left: 1%;
+}
+
+#gouwuche-good-num {
+    width: 45px;
+    height: 38px;
+    text-align: center;
+}
+
+#gooods-count {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#gouwuche-op {
+    display: flex;
+    flex-direction: column;
+}
+
+#gouwuche-op span:hover {
+    color: #0580fc;
+}
+
+.gouwuche-footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    background-color: rgb(250, 246, 246);
+    padding: 5px;
+    color: gray;
+    font-size: 14px;
+}
+
+#checkOrCancel {
+    color: gray;
+    font-size: 14px;
+}
+
+#checkALL, #gouwuche-all-goods, #gouwuche-pay, #gouwuche-all-sum {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0px;
+    align-items: center;
+    margin: 0;
+}
+
+.gouwuche-all-goods-num {
+    color: #3776b4;
+    font-weight: bold;
+    font-size: large;
+}
+
+.gouwuche-money-biaoshi, .gouwuche-all-money {
+    color: #3776b4;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+#gouwuche-all-sum {
+    margin-left: -2%;
+}
+
+#gouwuche-pay {
+    margin-left: 2%;
+}
+
+/* 登录 */
+
+html，body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.login-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1588698701891&di=42e2acab038011a8d8c697f5abb9e742&imgtype=0&src=http%3A%2F%2Fbpic.588ku.com%2Fback_pic%2F05%2F76%2F66%2F265be9439de16a3.jpg') no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 1000px;
+    z-index: -10;
+    zoom: 1;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-position: center 0;
+    
+}
+
+.login-contain {
+    width: 25%;
+    height: 60%;
+}
+
+.login-contain .nav-item {
+    margin-top: 5%;
+}
+
+.login-contain img {
+    width: 100%;
+    transform: scale(1.4);
+}
+
+.login-contain form {
+    margin-top: 2%;
+}
+
+.login-contain .form-group,.login-contain .btn {
+    padding:1% 4%;
+}
+
+
+.login-contain .form-check-label{
+    font-weight: lighter;
+    font-size: 14px;
+    color: gray;
+}

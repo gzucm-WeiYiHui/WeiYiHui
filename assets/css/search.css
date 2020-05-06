@@ -1,0 +1,168 @@
+#container-row {
+    margin-top: 80px;
+}
+
+#collect-container, #search-container {
+    margin: 1%;
+}
+
+/* 搜索 */
+
+#search-result {
+    width: 30%;
+    float: right;
+    font-size: 16px;
+    background-color: #3776b4;
+    font-weight: lighter;
+    padding: 1%;
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+#data-num {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.serch-contain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin: 0;
+    padding: 0;
+}
+
+.serch-contain .card {
+    width: 14rem;
+    margin: 1%;
+}
+
+.serch-contain .card img {
+    width: 100%;
+    height: 13rem;
+}
+
+.serch-contain .card a:hover {
+    text-decoration: none;
+    transform: scale(1.1);
+}
+
+.serch-contain .card-title {
+    color: rgb(108, 117, 125);
+    margin-top: 5px;
+}
+
+.serch-contain .card-title span {
+    font-size: 20px;
+    color: rgb(108, 117, 125);
+    font-weight: bold;
+}
+
+.serch-contain span {
+    color: grey;
+    font-weight: lighter;
+    font-size: 14px;
+    text-align: left;
+    margin-right: 6px;
+}
+
+.serch-contain .card-body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: white;
+}
+
+.goods-detail {
+    margin-left: 3px;
+    width: 100%;
+    margin-top: -20px;
+    text-align: left;
+    padding: 10px 3px;
+}
+
+/* 商铺 */
+
+.store {
+    margin-bottom: 2%;
+}
+
+.store-pic {
+    width: 60%;
+    height: 280px;
+}
+
+.store-pic img {
+    width: 100%;
+    height: 100%;
+}
+
+.media-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 280px;
+    text-align: center;
+    background-color: rgb(247, 244, 244);
+}
+
+.media-body h2 {
+    color: #17a2b8;
+}
+
+.media-body p {
+    font-weight: lighter;
+    color: gray;
+    font-size: 15px;
+}
+
+/* 商品收藏 */
+
+#collect-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#collect-container .card {
+    margin: 1%;
+    width: 14rem;
+    padding-bottom: 10px;
+}
+
+#collect-container .card img {
+    width: 100%;
+    height: 13rem;
+}
+
+#collect-container .card-text {
+    color: grey;
+    font-weight: lighter;
+    font-size: 15px;
+    text-align: left;
+    margin-left: 6px;
+}
+
+#collect-container .card-text span {
+    margin-right: 6px;
+}
+
+#collect-container .card-title {
+    margin-top: -6px;
+    color: rgb(108, 117, 125);
+}
+
+#collect-container .btn-toolbar {
+    width: 14rem;
+}
+
+#collect-container .btn-group {
+    margin:0 7px;
+    width: 100%;
+}
+
+#collect-container .btn-toolbar button {
+    font-size: 15px;
+    padding: 3px 0;
+}

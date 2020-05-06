@@ -1,0 +1,234 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <link rel="stylesheet" href="assets/bootstrap-4.4.1/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/theme.css" />
+    <link rel="stylesheet" href="assets/css/search.css" />
+    <link rel="stylesheet" href="assets/css/user.css" />
+    <link rel="stylesheet" href="assets/iconfont/iconfont.css" />
+</head>
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="10">
+    <section class="body">
+        <!-- 导航栏 -->
+        <div class="navbar fixed-top navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/logo.png" alt="logo" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form action="">
+                        <div class="input-group mb-2">
+                            <input type="text" class="form-control" placeholder="Search..."
+                                aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <div class="input-group-append">
+                                <a href="search.html"> <button class="btn btn-info" type="button"
+                                        id="button-addon2">搜索</button></a>
+                            </div>
+                        </div>
+                    </form>
+
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html"> <i class="iconfont icon-zhuye"></i>
+                            </a>
+                            <em>主页</em>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gouwuche.html"> <i class="iconfont icon-caigou"><span href="#"
+                                        class="badge badge-danger">5</span></i></a>
+                            <em>购物车</em>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="collect.html"> <i class="iconfont icon-aixin"></i>
+                            </a>
+                            <em>商品收藏</em>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> <i class="iconfont icon-zidingyidanju"></i>
+                            </a>
+                            <em>我的订单</em>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="iconfont icon-zhanghaosvg"></i>
+                                <span id="user-name">张小明</span>
+                                <span id="identity">会员</span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="user.html"> <i class="iconfont icon-geren2"></i>个人中心</a>
+                                <a class="dropdown-item" href="login.html#home-tab"> <i
+                                        class="iconfont icon-zhuce"></i>注册</a>
+                                <a class="dropdown-item" href="login.html#profile-tab"> <i
+                                        class="iconfont icon-denglu"></i>登录</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="login.html#home-tab">注册</a></li>
+                                <li class="breadcrumb-item"><a href="login.html#profile-tab">登录</a></li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- 网页内容 -->
+        <div class="row" id="gouwuche-contain">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <span id="gouwuche-all">全部商品</span><span id="gouwuche-num">5</span>
+                <div class="row" id="gouwuche-nav">
+                    <div class="col-md-1"> <input type="checkbox" id="checkOrCancelAll"><span for="checkOrCancelAll"
+                            id="checkOrCancel">全选</span></div>
+                    <div class="col-md-6">商铺</div>
+                    <div class="col-md-1">单价</div>
+                    <div class="col-md-2">数量</div>
+                    <div class="col-md-1">小计</div>
+                    <div class="col-md-1">操作</div>
+                </div>
+                <form action="">
+
+                    <div class="gouwuche-store-contain">
+                        <span id="gouwuche-store-name">洛阳布衣</span>
+                        <div class="row" id="gouwuche-good-contain">
+                            <div class="col-md-2">
+                                <input type="checkbox" name="check-item">
+                                <img src="http://img5.imgtn.bdimg.com/it/u=1298855336,2840197299&fm=26&gp=0.jpg" alt=""
+                                    width="120px">
+                            </div>
+                            <div class="col-md-5" id="gouwuche-goood-detail">
+                                <span>洛阳布衣</span><span>女鞋</span><span>轻便舒适网面透气女鞋单鞋时尚</span><span>黑白经典款</span><span>37码</span>
+                            </div>
+                            <div class="col-md-1">¥<span id="gouwuche-price">155</span></div>
+                            <div class="col-md-2" id="gooods-count">
+                                <a id="minus" class="btn btn-outline-info">-</a>
+                                <input type="text" class="form-control" value="10" id="gouwuche-good-num" maxlength="3">
+                                <a id="plus" class="btn btn-outline-info">+</a>
+                            </div>
+                            <div class="col-md-1">¥<span id="gouwuche-sum">155</span></div>
+                            <div class="col-md-1" id="gouwuche-op"><span>删除</span><span>收藏</span></div>
+                        </div>
+                        <div class="row" id="gouwuche-good-contain">
+                            <div class="col-md-2">
+                                <input type="checkbox" name="check-item">
+                                <img src="http://img5.imgtn.bdimg.com/it/u=2051809022,3833668417&fm=26&gp=0.jpg" alt=""
+                                    width="120px">
+                            </div>
+                            <div class="col-md-5" id="gouwuche-goood-detail">
+                                <span>洛阳布衣</span><span>棉外套女</span><span>秋冬毛呢外套厚保暖</span><span>粉色</span><span>M码</span>
+                            </div>
+                            <div class="col-md-1">¥<span id="gouwuche-price">155</span></div>
+                            <div class="col-md-2" id="gooods-count">
+                                <a id="minus" class="btn btn-outline-info">-</a>
+                                <input type="text" class="form-control" value="10" id="gouwuche-good-num" maxlength="3">
+                                <a id="plus" class="btn btn-outline-info">+</a>
+                            </div>
+                            <div class="col-md-1">¥<span id="gouwuche-sum">155</span></div>
+                            <div class="col-md-1" id="gouwuche-op"><span>删除</span><span>收藏</span></div>
+                        </div>
+                    </div>
+
+                    <div class="gouwuche-store-contain">
+                        <span id="gouwuche-store-name">店名</span>
+                        <div class="row" id="gouwuche-good-contain">
+                            <div class="col-md-2">
+                                <input type="checkbox" name="check-item">
+                                <img src="http://img5.imgtn.bdimg.com/it/u=2051809022,3833668417&fm=26&gp=0.jpg" alt=""
+                                    width="120px">
+                            </div>
+                            <div class="col-md-5" id="gouwuche-goood-detail">
+                                <span>店名</span><span>商品名</span><span>商品关键词一句话介绍</span><span>款式</span><span>尺码</span>
+                            </div>
+                            <div class="col-md-1">¥<span id="gouwuche-price">155</span></div>
+                            <div class="col-md-2" id="gooods-count">
+                                <a id="minus" class="btn btn-outline-info">-</a>
+                                <input type="text" class="form-control" value="10" id="gouwuche-good-num" maxlength="3">
+                                <a id="plus" class="btn btn-outline-info">+</a>
+                            </div>
+                            <div class="col-md-1">¥<span id="gouwuche-sum">155</span></div>
+                            <div class="col-md-1" id="gouwuche-op"><span>删除</span><span>收藏</span></div>
+                        </div>
+                    </div>
+
+                    <div class="gouwuche-store-contain">
+                        <span id="gouwuche-store-name">洛阳布衣</span>
+                        <div class="row" id="gouwuche-good-contain">
+                            <div class="col-md-2">
+                                <input type="checkbox" name="check-item">
+                                <img src="http://img5.imgtn.bdimg.com/it/u=1298855336,2840197299&fm=26&gp=0.jpg" alt=""
+                                    width="120px">
+                            </div>
+                            <div class="col-md-5" id="gouwuche-goood-detail">
+                                <span>斯凯蒂</span><span>女鞋</span><span>轻便舒适网面透气女鞋单鞋时尚</span><span>黑白经典款</span><span>37码</span>
+                            </div>
+                            <div class="col-md-1">¥<span id="gouwuche-price">155</span></div>
+                            <div class="col-md-2" id="gooods-count">
+                                <a id="minus" class="btn btn-outline-info">-</a>
+                                <input type="text" class="form-control" value="10" id="gouwuche-good-num" maxlength="3">
+                                <a id="plus" class="btn btn-outline-info">+</a>
+                            </div>
+                            <div class="col-md-1">¥<span id="gouwuche-sum">155</span></div>
+                            <div class="col-md-1" id="gouwuche-op"><span>删除</span><span>收藏</span></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+
+        <div class="gouwuche-footer">
+            <div class="row">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-8" id="checkALL">
+                            <input type="checkbox" id="checkCancelAll"><span for="checkCancelAll">全选</span>
+                        </div>
+                        <div class="col-md-2" id="gouwuche-all-goods">
+                            <span>已选择<span class="gouwuche-all-goods-num" id="all-goods-num">5</span>件商品</span>
+                        </div>
+                        <div class="col-md-1" id="gouwuche-all-sum">
+                            <span>总价</span><span class="gouwuche-money-biaoshi">¥</span><span
+                                class="gouwuche-all-money">200</span>
+                        </div>
+                        <div class="col-md-1" id="gouwuche-pay">
+                            <button type="button" class="btn btn-info">结算</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-2">
+                </div>
+            </div>
+
+    </section>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+<script src="assets/jquery/jquery.min.js"></script>
+<script src="assets/js/theme.js"></script>
+
+</html>
