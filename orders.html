@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <title>唯衣会</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/bootstrap-4.4.1/dist/css/bootstrap.css" />
   <link rel="stylesheet" href="assets/css/theme.css" />
-  <link rel="stylesheet" href="assets/css/search.css" />
-  <link rel="stylesheet" href="assets/css/user.css" />
+
   <link rel="stylesheet" href="./assets/css/orders.css">
   <link rel="stylesheet" href="assets/iconfont/iconfont.css" />
 </head>
@@ -82,97 +82,136 @@
       </nav>
     </div>
 
+
     <!-- 网页内容 -->
-    <div class="row margin-fixed">
-      <!-- 左侧导航栏 -->
-      <div class="col">
-        <div>
-          <button class="btn" data-toggle="collapse" data-target="#collapse1" aria-expanded="false"
-            aria-controls="collapse1">我的交易</button>
-          <ul class="collapse show list-group" id="collapse1">
-            <li class="list-group-item">订单管理</li>
-            <li class="list-group-item">退换/售后</li>
-            <li class="list-group-item">收货地址</li>
-          </ul>
-        </div>
-        <div>
-          <button class="btn" data-toggle="collapse" data-target="#collapse2" aria-expanded="false"
-            aria-controls="collapse2">我的资产</button>
+    <div class="margin-fixed"> </div>
 
-          <ul class="list-group" id="collapse2" class="collapse show">
-            <li class="list-group-item">零钱</li>
-            <li class="list-group-item">银行卡</li>
-            <li class="list-group-item">红包</li>
-            <li class="list-group-item">优惠券</li>
-            <li class="list-group-item">会员卡</li>
-          </ul>
+    <div class="row">
+      <div class="col-3">
+        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+          <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
+            aria-controls="v-pills-home" aria-selected="true">我的订单</a>
+          <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
+            aria-controls="v-pills-profile" aria-selected="false">我的收货地址</a>
 
-
-        </div>
-        <div>
-          <button class="btn" data-toggle="collapse" data-target="#collapse3" aria-expanded="false"
-            aria-controls="collapse3">设置</button>
-          <ul class="collapse show list-group" id="collapse3">
-            <li class="list-group-item">个人信息</li>
-          </ul>
         </div>
       </div>
 
-      
-      <div class="col-10 padding-fixed">
-        <div class="card title">
-        我的订单
-      </div>
-        <div class=""></div>
-        <div class="wrapper ">
-          <div class="d-flex bd-highlight">
-            <div class="card bg-light p-2 w-100 bd-highlightt"> 订单1</div>
-            
-              <ul class="card p-2 flex-shrink-1 bd-highlight">
-                <li>订单状态</li>
-                <li>删除</li>
-              </ul>
-            
+      <div class="col-9">
+        <div class="tab-content" id="v-pills-tabContent">
+          <!-- 我的订单 -->
+          <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+
+            <div class="mc">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">订单详情</th>
+                    <th scope="col">收货人</th>
+                    <th scope="col">金额</th>
+                    <th scope="col">状态</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td colspan="5"></td>
+                  </tr>
+                  <tr>
+                    <td colspan="5">
+                      <span class="dealtime">2020-05-15 17:06:48</span>
+                      <span class="number">订单号：<a href="#">123456879</a></span>
+                    </td>
+                  </tr>
+                  <tr class="tr-bd">
+                    <td>
+                      <div class="goods-item">洛阳布衣女鞋轻便舒适网面透气女鞋单鞋时尚黑白经典款37码</div>
+                      <div class="goods-number">×2</div>
+                    </td>
+                    <td rowspan="1"><span class="txt">小红</span></td>
+                    <td rowspan="1"><span>总额：¥124.00</span></td>
+                    <td rowspan="1"><span>待收货</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="mc">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">订单详情</th>
+                    <th scope="col">收货人</th>
+                    <th scope="col">金额</th>
+                    <th scope="col">状态</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td colspan="5"></td>
+                  </tr>
+                  <tr>
+                    <td colspan="5">
+                      <span class="dealtime">2020-05-15 17:06:48</span>
+                      <span class="number">订单号：<a href="#">123456879</a></span>
+                    </td>
+                  </tr>
+                  <tr class="tr-bd">
+                    <td>
+                      <div class="goods-item">洛阳布衣女鞋轻便舒适网面透气女鞋单鞋时尚黑白经典款37码</div>
+                      <div class="goods-number">×2</div>
+                    </td>
+                    <td rowspan="1"><span class="txt">小红</span></td>
+                    <td rowspan="1"><span>总额：¥124.00</span></td>
+                    <td rowspan="1"><span>待收货</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
           </div>
 
-          <div class="card bg-light"> 订单2</div>
-          <div class="card bg-light "> 订单3</div>
+          <!-- 我的收货地址 -->
+          <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+
+
+
+
+
+            <div>
+              <div class="card">
+                <div class="card-body text-left">
+                  <p class="card-text">收货人：<span>小红</span></p>
+                  <p class="card-text">收货地址：<span>广东省广州市番禺区大学城</span></p>
+                  <p class="card-text">手机号码：<span>12345678978</span></p>
+                  <a href="javascript:;" class="btn btn-primary">编辑</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-body text-right">
+              <a href="javascript:;" class="btn btn-info">新增收货地址</a>
+            </div>
+
+          </div>
+
         </div>
-
       </div>
-    </d>
-    <div id="section7">
-      <h2>关于我们<span>ABOUT US</span></h2>
-      <hr>
-      <div class="about">
-        <span>系统名称：</span>
-        <p>“唯衣会”在线购衣系统</p>
-        <span>本项目的任务提出者：</span>
-        <p>唯衣会服装公司</p>
-        <span> 系统开发背景：</span>
-        <p> “唯衣会服装”是一个服装销售商，销售多个品牌服装店的各种类型的衣服。现在该公司准备开发一套在线购衣平台，称为“唯衣会”。
-          随着信息技术的发展，网络科技的普及突破了时间和地域的局限性，经济全球化和网络化成为一种必然的趋势。而电子商务是一个发展潜力巨大的市场，极具有发展前景。电子商务双向信息沟通，灵活的交易手段和快速的交货方式的特点，将给社会带来巨大的经济效益，促进了整个社会的生产力的提高。“唯衣会”就是一种典型的电子商务应用，旨在为用户带来更加灵活方便的交易模式，促进电子商务的推广。
-        </p>
-        <span>开发者：</span>
-        <p>广州中医药大学2017年医工计算机科学与技术班第八组</p>
-        <span>用户：</span>
-        <p>唯衣会服装公司</p>
-      </div>
-    </div>
-
-    <div class="banquan"><span>Copyright © 2019-2020 唯衣会 weiyihui.com All Rights Reserved.
-        备案号：粤ICP备12346698号-1</span></div>
     </div>
 
   </section>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="assets/jquery/jquery.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+
 </body>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.slim.min.js"
-  integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
-  integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<script src="assets/jquery/jquery.min.js"></script>
-<script src="assets/js/theme.js"></script>
+
 
 </html>

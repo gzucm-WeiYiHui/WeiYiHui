@@ -1,12 +1,41 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .margin-fixed{
-  margin-top: 85px;
+  margin-top: 90px;
+}
+#container{
+  
 }
 
-.padding-fixed{
-  padding: 0 40px 40px 40px;
+#content{
+  display: flex;
+  justify-content: space-around;
+}
+#sub{
+  background-color: #f5f5f5;
+  width: 150px;
 }
 
-.title{
-  padding: 15px;
-  margin-bottom: 20px;
+
+#main{
+ 
+}
+
+#menu{
+
+}
+
+#menu .fore1{
+
+}
+
+#menu .fore1 .fore1_1, .fore1_2{
+
+}
+.mc{
+  margin-bottom: 50px;
 }
