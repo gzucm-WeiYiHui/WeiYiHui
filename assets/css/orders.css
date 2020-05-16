@@ -7,35 +7,7 @@
 .margin-fixed{
   margin-top: 90px;
 }
-#container{
-  
-}
 
-#content{
-  display: flex;
-  justify-content: space-around;
-}
-#sub{
-  background-color: #f5f5f5;
-  width: 150px;
-}
-
-
-#main{
- 
-}
-
-#menu{
-
-}
-
-#menu .fore1{
-
-}
-
-#menu .fore1 .fore1_1, .fore1_2{
-
-}
 .mc{
   margin-bottom: 50px;
 }
